@@ -19,7 +19,6 @@
   --shadow-deep: 0 30px 90px rgba(0, 0, 0, 0.34);
   --font-display: "Playfair Display", "Times New Roman", serif;
   --font-body: "Be Vietnam Pro", "Segoe UI", sans-serif;
-  --font-han: "Noto Serif CJK SC", "Songti SC", "SimSun", serif;
   --shell: min(1240px, calc(100vw - 64px));
   --header-h: 78px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
