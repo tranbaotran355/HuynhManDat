@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" role="img" aria-label="Con dấu đỏ son khắc chữ Hán 黃敏達">
+  <defs>
+    <filter id="distress" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".09" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <pattern id="speck" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r=".8" fill="#f2ebdd" opacity=".22"/>
+      <circle cx="7" cy="8" r=".6" fill="#f2ebdd" opacity=".16"/>
+    </pattern>
+  </defs>
+  <g filter="url(#distress)">
+    <rect x="6" y="6" width="128" height="128" rx="7" fill="#873d32"/>
+    <rect x="6" y="6" width="128" height="128" rx="7" fill="url(#speck)"/>
+    <rect x="15" y="15" width="110" height="110" rx="3" fill="none" stroke="#f2ebdd" stroke-width="2.6" opacity=".88"/>
+    <g font-family="'Noto Serif CJK SC','Songti SC','SimSun',serif" font-size="43" fill="#f2ebdd" text-anchor="middle" opacity=".94">
+      <text x="70" y="53">黃</text>
+      <text x="70" y="94">敏</text>
+      <text x="70" y="126" font-size="36">達</text>
+    </g>
+  </g>
+</svg>
