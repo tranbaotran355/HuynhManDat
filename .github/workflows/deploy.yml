@@ -17,10 +17,11 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -29,8 +30,15 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Verify website files
+        run: |
+          echo "Checking website directory..."
+          ls -la ./HuynhManDat
+          test -f ./HuynhManDat/index.html
+          echo "index.html found!"
+
       - name: Upload website
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./HuynhManDat
 
